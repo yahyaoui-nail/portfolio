@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.classList.toggle('active');
         });
 
-        // Ferme le menu après un clic sur un lien (très important pour l'expérience mobile)
+        // Ferme le menu aprÃ¨s un clic sur un lien (trÃ¨s important pour l'expÃ©rience mobile)
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Gestion du défilement fluide et de l'animation de surlignage
+    // Gestion du dÃ©filement fluide et de l'animation de surlignage
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (targetElement) {
-                // 1. Déclenche le défilement fluide
+                // 1. DÃ©clenche le dÃ©filement fluide
                 // Utilise window.scrollTo pour le retour en haut si la cible est le body
                 if (targetId === '#') {
                     window.scrollTo({
@@ -47,22 +47,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 // 2. Gestion de l'animation visuelle du titre (highlight)
-                // L'animation n'est pertinente que si on cible une section spécifique (pas le retour simple en haut)
+                // L'animation n'est pertinente que si on cible une section spÃ©cifique (pas le retour simple en haut)
                 if (targetId !== '#') {
-                    // Le délai permet de s'assurer que le défilement est en cours ou terminé.
+                    // Le dÃ©lai permet de s'assurer que le dÃ©filement est en cours ou terminÃ©.
                     setTimeout(() => {
                         // Nettoie toute ancienne animation
                         const previousHighlights = document.querySelectorAll('.highlight-target');
                         previousHighlights.forEach(el => el.classList.remove('highlight-target'));
                         
-                        // Ajoute la classe pour déclencher l'animation CSS
+                        // Ajoute la classe pour dÃ©clencher l'animation CSS
                         targetElement.classList.add('highlight-target');
 
-                        // Retire la classe après la fin de l'animation CSS (2s)
+                        // Retire la classe aprÃ¨s la fin de l'animation CSS (2s)
                         setTimeout(() => {
                             targetElement.classList.remove('highlight-target');
                         }, 2000); 
-                    }, 500); // Déclenche l'animation 0.5s après le clic
+                    }, 500); // DÃ©clenche l'animation 0.5s aprÃ¨s le clic
                 }
             }
         });
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollToTopButton = document.getElementById('scroll-to-top');
 
     if (scrollToTopButton) {
-        // Afficher le bouton lorsque l'utilisateur a défilé 300px
+        // Afficher le bouton lorsque l'utilisateur a dÃ©filÃ© 300px
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
                 scrollToTopButton.classList.add('show');
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Défilement fluide au clic
+        // DÃ©filement fluide au clic
         scrollToTopButton.addEventListener('click', () => {
             window.scrollTo({
                 top: 0,
@@ -90,5 +90,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    // NOTE: Le code pour les barres de progression a été retiré.
+    // NOTE: Le code pour les barres de progression a Ã©tÃ© retirÃ©.
 });		
