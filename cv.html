@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Nail YAHYAOUI | BTS SIO S.I.S.R</title>
+    <title>Portfolio - Nail YAHYAOUI | BTS SIO S.I.S.R</title>
+	<meta name="description" content="Portfolio de Nail YAHYAOUI, étudiant en BTS SIO SISR, spécialisé en administration système, réseaux Cisco et cybersécurité. Recherche d'alternance 2026-2027.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script defer src="script.js"></script>
@@ -12,33 +13,155 @@
 
     <header>
         <nav class="container">
-            <a href="index.html" class="logo-text">Nail <strong>YAHYAOUI</strong></a>
+            <a href="#" class="logo-text">Nail <strong>YAHYAOUI</strong></a>
             
             <ul class="nav-links">
-                <li><a href="index.html#accueil"><i class="fas fa-arrow-left"></i> Retour Portfolio</a></li>
+                <li><a href="#accueil"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="#formation"><i class="fas fa-graduation-cap"></i> Parcours</a></li>
+                <li><a href="#competences"><i class="fas fa-cogs"></i> Compétences</a></li>
+                <li><a href="#projets"><i class="fas fa-folder-open"></i> Projets</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
 
             <div class="nav-actions">
                 <a href="https://www.linkedin.com/in/nail-yahyaoui-24589432b/" target="_blank" class="nav-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
-                
-                <a href="cv.pdf" download class="nav-button cv"><i class="fas fa-download"></i> Télécharger le PDF</a>
+                <a href="cv.html" class="nav-button cv"><i class="fas fa-file-alt"></i> Mon CV</a>
             </div>
-            
+
             <button class="menu-toggle" aria-label="Ouvrir le menu de navigation"><i class="fas fa-bars"></i></button>
         </nav>
     </header>
 
     <main>
-        <section class="section-padding">
-            <div class="container" style="text-align: center;">
-                <h2 class="section-title"><i class="fas fa-file-pdf"></i> Aperçu du Curriculum Vitæ</h2>
-                
-                <p style="margin-bottom: 20px;">Utilisez le bouton de navigation ou le bouton ci-dessous pour télécharger la version PDF complète.</p>
+        <section id="accueil" class="hero section-padding">
+            <div class="hero-content container">
+                <div class="hero-text">
+                    <p class="greeting">Bonjour, je suis</p>
+                    <h1 class="identity-name">Nail YAHYAOUI</h1>
+                    <h2>Étudiant en <strong>BTS SIO SISR</strong></h2>
+                    <p class="tagline">Passionné par l'administration système, l'infrastructure réseau et la cybersécurité. En quête d'excellence technique.</p>
+                    
+                    <div class="key-info">
+                        <p><i class="fas fa-calendar-check"></i> <strong>À la recherche d'une alternance pour une troisième année d'études</strong></p>
+                        <p><i class="fas fa-clock"></i> <strong>Durée:</strong> 1 an | <strong>Période:</strong> 2026-2027</p>
+                    </div>
 
-                <iframe src="cv.pdf" style="width: 100%; height: 90vh; border: 1px solid var(--couleur-bordure); border-radius: 8px;" title="Aperçu du CV de Nail YAHYAOUI"></iframe>
+                    <div class="hero-cta-buttons">
+                        <a href="#contact" class="cta-button contact-btn"><i class="fas fa-paper-plane"></i> Me Contacter</a>
+                        <a href="#competences" class="cta-button skills-btn"><i class="fas fa-cogs"></i> Mes Compétences</a>
+                    </div>
+                </div>
+
+                <div class="hero-image-container">
+                    <img src="Capture.PNG" alt="Photo de profil de Nail YAHYAOUI" class="hero-image-pro">
+                </div>
+            </div>
+        </section>
+
+        <section id="formation" class="section-padding">
+            <h2 class="section-title"><i class="fas fa-road"></i> Parcours Académique & Professionnel</h2>
+
+            <div class="timeline-container container">
+                <article class="timeline-item experience">
+                    <h3>Stage de première année - Technicien en gestion de parc informatique</h3>
+                    <p class="date"><i class="far fa-calendar-alt"></i> <strong>Juin - Juillet 2025</strong></p>
+                    <p class="etablissement"><i class="fas fa-university"></i> Université de Strasbourg</p>
+                    <p class="description"><strong>Mission principale:</strong> Maintenance préventive et corrective sur un parc de 200+ machines. Gestion des tickets de support niveau 1. Première expérience concrète en environnement IT professionnel.</p>
+                </article>
+
+                <article class="timeline-item diplome">
+                    <h3>BTS SIO (Solutions d'Infrastructure, Systèmes et Réseaux)</h3>
+                    <p class="date"><i class="far fa-calendar-alt"></i> <strong>2024-2026</strong> (en cours)</p>
+                    <p class="etablissement"><i class="fas fa-school"></i> Lycée René Cassin, Strasbourg</p>
+                    <p class="description">Acquisition de solides bases en administration <strong>Windows Server</strong>, <strong>Linux</strong>, <strong>réseaux Cisco</strong> et <strong>virtualisation (Hyper-V)</strong>. Projets axés sur la sécurisation d'infrastructure.</p>
+                </article>
+
+                <article class="timeline-item diplome">
+                    <h3>BAC STI2D (Systèmes d'information et numérique)</h3>
+                    <p class="date"><i class="far fa-calendar-alt"></i> <strong>2024</strong></p>
+                    <p class="etablissement"><i class="fas fa-school"></i> Lycée Couffignal, Strasbourg</p>
+                    <p class="description">Fondations en développement, logique algorithmique et compréhension des architectures logicielles et matérielles.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="competences" class="section-padding">
+            <h2 class="section-title"><i class="fas fa-tools"></i> Compétences Techniques & Certifications</h2>
+
+            <div class="skills-grid container">
                 
-                <div style="margin-top: 40px; margin-bottom: 20px;">
-                    <a href="cv.pdf" download class="cta-button contact-btn"><i class="fas fa-download"></i> Télécharger le CV (PDF)</a>
+                <div class="competences-group">
+                    <h3><i class="fas fa-server"></i> Administration Système</h3>
+                    <ul>
+                        <li><i class="fab fa-windows"></i> Windows Server (AD, GPO, DNS, DHCP)</li>
+                        <li><i class="fab fa-linux"></i> Linux (Debian, Ubuntu) & Scripting Bash</li>
+                        <li><i class="fas fa-cubes"></i> Virtualisation (VirtualBox, Hyper-V)</li>
+                        <li><i class="fas fa-cloud"></i> Cloud (Notions)</li>
+                        <li><i class="fas fa-database"></i> Bases de données (SQL)</li>
+                    </ul>
+                </div>
+                
+                <div class="competences-group">
+                    <h3><i class="fas fa-shield-alt"></i> Réseaux & Sécurité</h3>
+                    <ul>
+                        <li><i class="fas fa-network-wired"></i> Réseaux Cisco (VLAN, Routage statique)</li>
+                        <li><i class="fas fa-user-lock"></i> Gestion des utilisateurs et permissions (ACL)</li>
+                        <li><i class="fas fa-chart-line"></i> Analyse de trafic (Wireshark)</li>
+                        <li><i class="fas fa-bug"></i> OSINT & Analyse de risques</li>
+                    </ul>
+                </div>
+
+                <div class="competences-group certification-section">
+                    <h3><i class="fas fa-medal"></i> Certifications & Langues</h3>
+                    <ul>
+                        <li><i class="fas fa-file-contract"></i> <strong>CNIL</strong> (RGPD)</li>
+                        <li><i class="fas fa-shield-alt"></i> <strong>ANSSI</strong> (SecNum)</li>
+                        <li><i class="fas fa-graduation-cap"></i> <strong>CISCO</strong> (Netacad I et II)</li>
+                        <li><i class="fas fa-certificate"></i> <strong>PIX</strong> (Niveau Avancé)</li>
+                    </ul>
+                    <p class="langues"><strong>Langues</strong> : Anglais B1, Allemand A2</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="section-padding">
+            <h2 class="section-title"><i class="fas fa-code-branch"></i> Projets Réalisés</h2>
+            <div class="projets-grid container">
+                
+                <div class="projet-card">
+                    <h3>Mise en place d'un Active Directory</h3>
+                    <p class="tags">Windows Server, GPO, DHCP, DNS</p>
+                    <p class="description">Déploiement complet d'un domaine Active Directory sous Windows Server 2022 pour simuler un environnement PME (50 utilisateurs). Implémentation de GPO pour la gestion centralisée des postes clients.</p>
+                    <a href="[Lien vers le rapport/dépôt du projet]" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Voir le Projet</a>
+                </div>
+
+                <div class="projet-card">
+                    <h3>Sécurisation d'un réseau Linux</h3>
+                    <p class="tags">Linux, Netfilter/Iptables, SSH</p>
+                    <p class="description">Configuration de pare-feu robuste sur un serveur Debian pour n'autoriser que les services essentiels. Mise en place d'une connexion SSH sécurisée avec authentification par clé.</p>
+                    <a href="[Lien vers le rapport/dépôt du projet]" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Voir le Projet</a>
+                </div>
+
+                <div class="projet-card">
+                    <h3>Configuration d'un réseau multi-VLAN</h3>
+                    <p class="tags">Cisco Packet Tracer, VLAN, Routage</p>
+                    <p class="description">Conception et implémentation d'un réseau d'entreprise segmenté en trois VLAN (Administration, Production, Invités) sur Packet Tracer. Configuration du routage inter-VLAN et optimisation du STP.</p>
+                    <a href="[Lien vers le rapport/dépôt du projet]" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Voir le Projet</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding section-contact">
+            <h2 class="section-title"><i class="fas fa-handshake"></i> Collaborons ensemble</h2>
+            <div class="contact-card container">
+                <p class="contact-message">Je suis activement à la recherche d'une alternance pour une troisième année d'études (2026-2027). Mon profil vous intéresse ? N'hésitez pas à me contacter pour toute opportunité ou question.</p>
+                
+                <div class="contact-details">
+                    <p><i class="fas fa-at"></i> <strong>Email</strong> : <a href="mailto:yahyaoui.nail@gmail.com">yahyaoui.nail@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <strong>Téléphone</strong> : 07 69 71 15 30</p>
+                    <p><i class="fab fa-linkedin"></i> <strong>LinkedIn</strong> : <a href="https://www.linkedin.com/in/nail-yahyaoui-24589432b/" target="_blank">Mon profil</a></p>
+                    <p><i class="fab fa-github"></i> <strong>GitHub</strong> : <a href="https://github.com/yahyaoui-nail" target="_blank">Mon profil</a></p>
                 </div>
             </div>
         </section>
@@ -50,5 +173,10 @@
         </div>
     </footer>
 
+    <button id="scroll-to-top" aria-label="Retour en haut de page">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
 </body>
+
 </html>
