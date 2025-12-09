@@ -67,4 +67,28 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
+
+    // Gestion du bouton de retour en haut
+    const scrollToTopButton = document.getElementById('scroll-to-top');
+
+    if (scrollToTopButton) {
+        // Afficher le bouton lorsque l'utilisateur a défilé 300px
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopButton.classList.add('show');
+            } else {
+                scrollToTopButton.classList.remove('show');
+            }
+        });
+
+        // Défilement fluide au clic
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+    
+    // NOTE: Le code pour les barres de progression a été retiré.
+});		
